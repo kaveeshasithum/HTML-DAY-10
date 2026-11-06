@@ -36,3 +36,14 @@ function clickButton() {
     number[index] = element;
     console.log(number);
 }
+
+//step 1: method
+function getsum(num1,num2){
+    return num1+num2;
+}
+//step 2: method call
+let getsum=function(num1,num2){
+    return num1+num2;
+}
+//step 3: method call
+let getsum=(num1,num2)
