@@ -46,4 +46,12 @@ let getsum=function(num1,num2){
     return num1+num2;
 }
 //step 3: method call
-let getsum=(num1,num2)
+let getsum=(num1,num2)=>{
+    return num1+num2;
+}
+//step 4: method call
+let getsum=num1=>{
+    return num1;
+}
+//step 5: method call
+let getsum=num1=>num1;
