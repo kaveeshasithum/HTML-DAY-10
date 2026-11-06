@@ -60,5 +60,11 @@
 // console.log(getsum(10,20));
 
 //---------------------------------------------------------------------------
-const nameList =["saman","nimal","kamal","amal"];
-nameList.forEach(cName=>console.log(cName));
+// const nameList =["saman","nimal","kamal","amal"];
+// nameList.forEach(cName=>console.log(cName));
+
+//-----------------------------------------------
+const empSalary=[75000,30000,25000,40000,60000];
+const empSalary2=[];
+empSalary.forEach((salary)=>empSalary2.push(salary*2));
+console.log(empSalary2);
