@@ -29,13 +29,16 @@
 // console.log(number);
 // number.shift();
 
-// console.log(number);
-// function clickButton() {
-//     const element = document.getElementById("elementId").value;
-//     const index = document.getElementById("indexId").value;
-//     number[index] = element;
-//     console.log(number);
-// }
+console.log(number);
+function clickButton() {
+Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "Your work has been saved",
+  showConfirmButton: false,
+  timer: 1500
+});
+}
 
 // //step 1: method
 // function getsum(num1,num2){
@@ -64,7 +67,50 @@
 // nameList.forEach(cName=>console.log(cName));
 
 //-----------------------------------------------
-const empSalary=[75000,30000,25000,40000,60000];
-const empSalary2=[];
-empSalary.forEach((salary)=>empSalary2.push(salary*2));
-console.log(empSalary2);
+// const empSalary=[75000,30000,25000,40000,60000];
+// const empSalary2=[];
+// empSalary.forEach((salary)=>empSalary2.push(salary*2));
+// console.log(empSalary2);
+
+// const nameList =["saman","nimal","kamal","amal"];
+// const nameList2=nameList.map(name=>`WELCOME ${name}`);
+// console.log(nameList2);
+const productList=[
+    {id:1,
+        name:"bun",
+        price:100
+    },
+    {id:2,
+        name:"milk",
+        price:200
+    },
+    {id:3,
+        name:"bread",
+        price:300
+    },
+    {id:4,
+        name:"eggbun",
+        price:400
+    },
+    {id:5,
+        name:"Rice",
+        price:1000
+    },
+    {id:6,
+        name:"Kottu",
+        price:1200
+    },
+    {id:7,
+        name:"Icecream",
+        price:700
+    },
+      {id:8,
+        name:"eggbun",
+        price:400
+    }
+    
+]
+
+const productList2=productList.map(product=>product.price=product.price+product.price*20/100);
+console.log(productList2);
+
