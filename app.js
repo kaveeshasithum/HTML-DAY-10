@@ -28,4 +28,11 @@ console.log(number);
 number.unshift(5);
 console.log(number);
 number.shift();
+
 console.log(number);
+function clickButton() {
+    const element = document.getElementById("elementId").value;
+    const index = document.getElementById("indexId").value;
+    number[index] = element;
+    console.log(number);
+}
